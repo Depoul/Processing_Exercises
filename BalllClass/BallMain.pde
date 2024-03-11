@@ -4,7 +4,6 @@ void setup(){
   background(0);
   size(1000,500);
   abs = new ArrayList<Ball>();
-  frameRate(200);
 }
 
 void draw(){
