@@ -21,8 +21,9 @@ class LightningBolt extends Bolt{
     if(isFlashOn){
       noStroke();
       fill(255);
-      triangle(posX,posY, posX+10,posY, posX+10, posY-40);
-      triangle(posX+10,posY, posX+20,posY, posX+10, posY+40);
+      float rand = random(-5,+5);
+      triangle(posX+rand,posY, posX+10+rand,posY, posX+10+rand, posY-40);
+      triangle(posX+10+rand,posY, posX+20+rand,posY, posX+10+rand, posY+40);
     }
   }
   

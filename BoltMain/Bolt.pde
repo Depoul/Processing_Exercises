@@ -13,12 +13,13 @@ class Bolt{
   void display(){
     noStroke();
     fill(255,255,0);
-    triangle(posX,posY, posX+10,posY, posX+10, posY-40);
-    triangle(posX+10,posY, posX+20,posY, posX+10, posY+40);
+    float rand = random(-5,5);
+    triangle(posX+rand,posY, posX+10+rand,posY, posX+10+rand, posY-40);
+    triangle(posX+10+rand,posY, posX+20+rand,posY, posX+10+rand, posY+40);
   }
   
   void move(){
-    posX = random(posX-5, posX+5);
+    
     posY = posY + 1 * speedY;
     
     if(posY>height+40){
