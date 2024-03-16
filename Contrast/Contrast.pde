@@ -2,7 +2,8 @@ PImage Im, Is, Ie;
 float [] H1, H2, H3;
 
 void setup(){
-  size(1536,512);
+  background(0);
+  size(1536,812);
   Im = loadImage("lena.png");
   Im.filter(GRAY);
   
@@ -17,8 +18,13 @@ void setup(){
   image(Is, 512, 0);
   image(Ie, 1024, 0);
   
+  rectMode(CORNERS);
+  noStroke();
+  fill(255,255,0);
   for(int i=0; i<256; i++){
-    println(i+": "+H1[i]+"\t\t\t"+H2[i]+"\t\t\t"+H3[i]);
+    rect(i*2, height-(H1[i]*256*100), i*2+2, height);
+    rect(Im.width+i*2, height-(H2[i]*256*100), Im.width+i*2+2, height);
+    rect(Im.width*2+i*2, height-(H3[i]*256*100), Im.width*2+i*2+2, height);
   }
 }
 
