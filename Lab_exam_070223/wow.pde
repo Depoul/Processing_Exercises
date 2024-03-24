@@ -9,7 +9,7 @@ PImage wow(PImage I){
   float portion = (R.height * percent/100);
   
   PImage sup = R.get(0, 0, R.width, int(portion));
-  PImage inf = R.get(0, int(portion), R.width, int(R.width-portion));
+  PImage inf = R.get(0, int(portion), R.width, int(R.height-portion));
   
   float r,g,b;
   

@@ -1,4 +1,4 @@
-class LightningBolt extends Bolt{
+fclass LightningBolt extends Bolt{
   
   boolean isFlashOn;
   float lastFlashTime;
