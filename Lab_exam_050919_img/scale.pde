@@ -10,7 +10,7 @@ PImage scaleF(PImage I, float s){
   for(int u=0; u<I.width; u++){
     for(int v=0; v<I.height; v++){
       u1 = u-I.width/2;
-      v1 = v-I.height/2;
+      v1 = v-I.height/2
       x = u1*s;
       y = v1*s;
       x = x+I.width/2;
